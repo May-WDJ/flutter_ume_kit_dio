@@ -234,7 +234,9 @@ class _ResponseCardState extends State<_ResponseCard> {
     final Map<String, List<String>> map = _request.headers.map(
       (key, value) => MapEntry(
         key,
-        value is Iterable ? value.map((v) => v.toString()).toList() : [value],
+        value is Iterable
+            ? value.map((v) => v.toString()).toList()
+            : [value ?? ""],
       ),
     );
     final Headers headers = Headers.fromMap(map);
