@@ -71,8 +71,8 @@ class DioPluggableState extends State<DioInspector> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: const <Widget>[
-          Text('Clear'),
-          Icon(Icons.cleaning_services, size: 14),
+          Text('Clear',style: TextStyle( color: Colors.white),),
+          Icon(Icons.cleaning_services, size: 14,color: Colors.white,),
         ],
       ),
     );
@@ -277,7 +277,7 @@ class _ResponseCardState extends State<_ResponseCard> {
       style: _buttonStyle(context),
       child: const Text(
         'Detail🔍',
-        style: TextStyle(fontSize: 12, height: 1.2),
+        style: TextStyle(fontSize: 12, height: 1.2, color: Colors.white),
       ),
     );
   }
